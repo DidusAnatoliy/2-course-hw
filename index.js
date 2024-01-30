@@ -2,6 +2,11 @@
 let с = 10;
 alert(с)
 
+console.log(window.c);
+
+c = 20;
+alert(c);
+
 //* Task 2
 const iPhoneOne = 2007;
 alert(iPhoneOne)
