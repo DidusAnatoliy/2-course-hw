@@ -1,10 +1,7 @@
 //* Task 1 В первом задании переменную "a"изменил на "с" что бы переменная "a", которая и в 6ом задание есть не выдавала ошибку.
 let с = 10;
 alert(с)
-
-console.log(window.c);
-
-c = 20;
+let c = 20;
 alert(c);
 
 //* Task 2
@@ -19,20 +16,20 @@ alert(nameCreatorJavaScript)
 const numbOne = 10;
 const numbTwo = 2;
 
-alert(10 + 2);
-alert(10 - 2);
-alert(10 * 2);
-alert(10 / 2);
+alert(numbOne + numbTwo);
+alert(numbOne - numbTwo);
+alert(numbOne * numbTwo);
+alert(numbOne / numbTwo);
 
 //* Task 5
-let result = Number(numbTwo**5);
+let result = (numbTwo**5);
 alert(result);
 
 //* Task 6
 const a = 9;
 const b = 2;
 
-let x = 9 % 2;
+let x = a % b;
 alert(x);
 
 //* Task 7
@@ -61,7 +58,7 @@ let user = {
 user["city of residence"] = "Saint-Petersburg"
 
 //* Task 9.2
-user.age = Number(prompt());
+user.age = 66;
 
 //* Task 9.3
 delete user["city of residence"]
