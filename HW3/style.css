@@ -1,62 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  .center {
-    padding-left: calc(50% - 720px);
-    padding-right: calc(50% - 720px);
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  input,
-  button,
-  select {
-    font-family: inherit;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-.header{
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #000915;
+}
+
+.center {
+  padding-inline: max(50% - 599px, 16px);
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button,
+select {
+  font-family: inherit;
+}
+
+.header {
   height: 1024px;
   background-image: url(img/main.jpg);
   background-repeat: no-repeat;
-
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
 }
-.title{
+
+.title {
   font-size: 64px;
-  line-height: 70px;
   margin-bottom: 16px;
   color: #FFFFFF;
-  width: 788px;
-  padding-left: 120px;
+  max-width: 750px;
   padding-top: 217px;
   font-weight: 700;
 }
-.text{
+
+.text {
   font-size: 18px;
   font-style: normal;
-  line-height: 32px;
+  line-height: 178%;
   color: #FFFFFF;
   margin-top: 32px;
   max-width: 481px;
-  margin-left: 120px;
   font-weight: 300;
   font-weight: lighter;
 }
-.text-bolt{
+
+.text-bolt {
   font-weight: bold;
 }
-.header__button{
+
+.header__button {
   margin-top: 44px;
-  margin-left: 120px;
   width: 234px;
   height: 48px;
   border-radius: 30px;
@@ -65,39 +66,68 @@
   font-size: 18px;
   color: #FFFFFF;
   font-weight: 400px;
+  display: inline-block;
+  cursor: pointer;
 }
+
 .footer {
   height: 556px;
   background-color: #000915;
-
 }
-.product-content{
-  margin-left: 120px;
+
+.product-content {
   padding-top: 128px;
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
 }
+
 .product {
   color: #FFF;
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
   font-size: 24px;
-  width: 379px;
+  width: 378px;
   height: 300px;
   padding-left: 32px;
-  padding-top: 237px
+  padding-top: 237px;
+  border-radius: 16px;
 }
-.product__img-1{
+
+.product__img-1 {
   background-image: url(img/1.svg);
   background-repeat: no-repeat;
 }
-.product__img-2{
+
+.product__img-2 {
   background-image: url(img/2.svg);
   background-repeat: no-repeat;
 }
-.product__img-3{
+
+.product__img-3 {
   background-image: url(img/3.svg);
   background-repeat: no-repeat;
 }
+
+@media (max-width: 767px) {
+  .center {
+    padding-inline: max(50% - 171px, 16px);
+    animation: none;
+  }
+  .header {
+    height: 735px;
+    text-align: center;
+    background-position: 31%;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .text {
+    font-size: 14px;
+    line-height: 157%;
+  }
+  .product {
+    border-radius: 16px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,24 @@
+@media (max-width: 767px) {
+    .center {
+        padding-inline: max(50% - 171px, 16px);
+        animation: none;
+          }
+
+    .header {
+        height: 735px;
+        text-align: center;
+        background-position: 31%;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .text {
+        font-size: 14px;
+        line-height: 157%;
+    }
+    .product {
+    border-radius: 16px;
+    }
+}
