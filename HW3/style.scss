@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@keyframes myAnim {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +29,7 @@ body {
     padding-inline: max(50% - 599px, 16px);
 }
 
-a {
+a { 
     text-decoration: none;
 }
 
@@ -23,6 +37,7 @@ input,
 button,
 select {
     font-family: inherit;
+    transition: all 0.3s;
 }
 
 .header {
@@ -31,6 +46,10 @@ select {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    :hover {
+        text-decoration: underline;
+    }
 
 }
 
@@ -73,7 +92,7 @@ select {
 }
 
 
-.footer {
+.section {
     height: 556px;
     background-color: #000915;
 
@@ -97,14 +116,12 @@ select {
     padding-left: 32px;
     padding-top: 237px;
     border-radius: 16px;
-    
 }
 
 .product__img-1 {
     background-image: url(img/1.svg);
     background-repeat: no-repeat;
 }
-
 .product__img-2 {
     background-image: url(img/2.svg);
     background-repeat: no-repeat;

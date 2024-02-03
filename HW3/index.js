@@ -1,7 +1,8 @@
-//Task 1 немного сделал подругому, но финал получился тот же
+//Task 1 
 
-let password = prompt("Введите пароль");
-if (password === "пароль") {
+let password = "пароль";
+let question = prompt("Введите пароль").toLowerCase();
+if (password.toLowerCase() === question) {
     alert("Пароль введен верно");
 }
 else {
@@ -33,64 +34,38 @@ else {
 
 let a = '2';
 let b = '3';
-alert( Number(a) + Number(b));
+alert(Number(a) + Number(b));
 
 
 //Task 5
 
 let monthNumber = Number(prompt("Введите цифру месяца"));
 
-switch (monthNumber) {
-    case 1:
-        console.log("Январь Второй месяц зимы");
-
-        break;
-    case 2:
-        console.log("Февраль Третий месяц зимы");
-
-        break;
-    case 3:
-        console.log("Март Первый месяц весны");
-
-        break;
-    case 4:
-        console.log("Апрель Второй месяц весны");
-
-        break;
-    case 5:
-        console.log("Май Третий месяц весны");
-
-        break;
-    case 6:
-        console.log("Июнь Первый месяц лета");
-
-        break;
-    case 7:
-        console.log("Июль Второй месяц лета");
-
-        break;
-    case 8:
-        console.log("Август Третий месяц лета");
-
-        break;
-    case 9:
-        console.log("Сентябрь Первый месяц осени");
-
-        break;
-    case 10:
-        console.log("Октябрь Второй месяц осени");
-
-        break;
-    case 11:
-        console.log("Ноябрь Третий месяц осени");
-
-        break;
-    case 12:
-        console.log("Декабрь Первый месяц зимы");
-
-        break;
-    default:
-        console.log('Такого месяца не существует!');
-        break;
+if(monthNumber > 12){
+    console.log('Номер месяца не может быть больше 12');
+} else {
+    switch(monthNumber) {
+        case 12:
+        case 1:
+        case 2:
+            console.log('Зима');
+            break;
+        case 3:
+        case 4:
+        case 5:
+            console.log('Весна');
+            break;
+        case 6:
+        case 7:
+        case 8:
+            console.log('Лето');
+            break;
+        case 9:
+        case 10:
+        case 11:
+            console.log('Осень');
+            break;
+        default:
+            console.log('Некорректный ввод');
+    }
 }
-
