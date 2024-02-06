@@ -45,6 +45,11 @@ console.log(n);
 console.log(num);
 
 // Task6
+function getDayOfWeek(day, month, year) {
+    const date = new Date(year, month -  1, day);
+    const dayOfWeek = date.getDay();  
+    return dayOfWeek;
+}
 for (let day = 1; day <= 31; day++) {
     const dayOfWeek = getDayOfWeek(day, 3, 2024); 
     if (dayOfWeek === 5) { 
