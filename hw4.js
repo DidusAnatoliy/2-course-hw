@@ -45,14 +45,8 @@ console.log(n);
 console.log(num);
 
 // Task6
-function getDayOfWeek(day, month, year) {
-    const date = new Date(year, month -  1, day);
-    const dayOfWeek = date.getDay();  
-    return dayOfWeek;
-}
-for (let day = 1; day <= 31; day++) {
-    const dayOfWeek = getDayOfWeek(day, 3, 2024); 
-    if (dayOfWeek === 5) { 
-        console.log(`Сегодня пятница, ${day}-е число. Необходимо подготовить отчет.`);
+
+let firstFriday = 5;
+for (let i = firstFriday; i <= 31; i+=7) {
+        console.log(`Сегодня пятница, ${i}-е число. Необходимо подготовить отчет.`);
     }
-}
