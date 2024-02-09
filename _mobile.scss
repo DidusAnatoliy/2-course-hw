@@ -2,7 +2,7 @@
     .center {
         padding-inline: max(50% - 171px, 16px);
         animation: none;
-          }
+    }
 
     .header {
         height: 735px;
@@ -18,7 +18,31 @@
         font-size: 14px;
         line-height: 157%;
     }
+
     .product {
-    border-radius: 16px;
+        border-radius: 16px;
+    }
+
+    .section {
+        text-align: center;
+    }
+
+    .section__title {
+        padding-top: 127px;
+        font-size: 32px;
+    }
+
+    .section__text {
+        font-size: 15px;
+        line-height: 157%;
+    }
+
+    .section__img {
+        position: relative;
+        width: 344px;
+        height: 236px;
+        left: 4px;
+        top: 64px;
+        bottom: 200px;
     }
 }
