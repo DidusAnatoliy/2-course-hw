@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@keyframes myAnim {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #000915;
+}
+
+.center {
+    padding-inline: max(50% - 599px, 16px);
+}
+
+a { 
+    text-decoration: none;
+}
+
+input,
+button,
+select {
+    font-family: inherit;
+    transition: all 0.3s;
+}
+
+.header {
+    height: 1024px;
+    background-image: url(img/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    :hover {
+        text-decoration: underline;
+    }
+
+}
+
+.title {
+    font-size: 64px;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+    max-width: 750px;
+    padding-top: 217px;
+    font-weight: 700;
+}
+
+.text {
+    font-size: 18px;
+    font-style: normal;
+    line-height: 178%;
+    color: #FFFFFF;
+    margin-top: 32px;
+    max-width: 481px;
+    font-weight: 300;
+    font-weight: lighter;
+}
+
+.text-bolt {
+    font-weight: bold;
+}
+
+.header__button {
+    margin-top: 44px;
+    width: 234px;
+    height: 48px;
+    border-radius: 30px;
+    background-color: #9C0332;
+    border: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 400px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.section {
+    height: 556px;
+    background-color: #000915;
+
+}
+
+.product-content {
+    padding-top: 128px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.product {
+    color: #FFF;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    font-size: 24px;
+    width: 378px;
+    height: 300px;
+    padding-left: 32px;
+    padding-top: 237px;
+    border-radius: 16px;
+}
+
+.product__img-1 {
+    background-image: url(img/1.svg);
+    background-repeat: no-repeat;
+}
+.product__img-2 {
+    background-image: url(img/2.svg);
+    background-repeat: no-repeat;
+}
+
+.product__img-3 {
+    background-image: url(img/3.svg);
+    background-repeat: no-repeat;
+}
+
+@import 'mobile';
