@@ -22,11 +22,7 @@
     .product {
         border-radius: 16px;
     }
-
-    .section {
-        text-align: center;
-    }
-
+    
     .section__title {
         padding-top: 127px;
         font-size: 32px;
@@ -38,11 +34,14 @@
     }
 
     .section__img {
-        position: relative;
-        width: 344px;
+        padding-left: 16px;
+        margin-top: 64px;
+        margin-bottom: 85px
+    }
+
+    .section__img_size {
+        max-width: 344px;
         height: 236px;
-        left: 4px;
-        top: 64px;
-        bottom: 200px;
+        width: 100%;
     }
 }
