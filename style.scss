@@ -53,7 +53,7 @@ select {
     background-size: cover;
     background-position: center;
 
-    &:hover {
+    :hover {
         text-decoration: underline;
     }
 
@@ -102,8 +102,7 @@ select {
     background-color: #000915;
     display: flex;
     flex-wrap: wrap;
-
-    &:hover {
+    :hover {
         text-decoration: underline;
     }
 }

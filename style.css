@@ -46,7 +46,7 @@ select:hover {
   background-size: cover;
   background-position: center;
 }
-.header:hover {
+.header :hover {
   text-decoration: underline;
 }
 
@@ -93,7 +93,7 @@ select:hover {
   display: flex;
   flex-wrap: wrap;
 }
-.section:hover {
+.section :hover {
   text-decoration: underline;
 }
 
