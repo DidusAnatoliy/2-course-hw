@@ -32,6 +32,12 @@ select {
   font-family: inherit;
   transition: all 0.3s;
 }
+input:hover,
+button:hover,
+select:hover {
+  transform: scale(1.05);
+  transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
 
 .header {
   height: 1024px;
@@ -40,7 +46,7 @@ select {
   background-size: cover;
   background-position: center;
 }
-.header :hover {
+.header:hover {
   text-decoration: underline;
 }
 
@@ -87,7 +93,7 @@ select {
   display: flex;
   flex-wrap: wrap;
 }
-.section :hover {
+.section:hover {
   text-decoration: underline;
 }
 
@@ -154,20 +160,26 @@ select {
   border-radius: 16px;
   width: 100%;
 }
+.product:hover {
+  transform: scale(1.05);
+}
 
 .product__img-1 {
   background-image: url(img/1.svg);
   background-repeat: no-repeat;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 .product__img-2 {
   background-image: url(img/2.svg);
   background-repeat: no-repeat;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 .product__img-3 {
   background-image: url(img/3.svg);
   background-repeat: no-repeat;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 @media (max-width: 767px) {
