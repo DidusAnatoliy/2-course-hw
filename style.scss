@@ -42,7 +42,10 @@ select {
     &:hover {
         transform: scale(1.05);
         transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+        background-color: #ff0000;
+        transition: background-color 1s ease 0s;
     }
+
 }
 
 
@@ -102,6 +105,7 @@ select {
     background-color: #000915;
     display: flex;
     flex-wrap: wrap;
+
     :hover {
         text-decoration: underline;
     }
@@ -169,7 +173,7 @@ select {
     padding-top: 237px;
     border-radius: 16px;
     width: 100%;
-    
+
     &:hover {
         transform: scale(1.05);
     }
