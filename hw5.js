@@ -39,7 +39,7 @@ console.log(checkEvenOrOdd(7));
 
 // Task 3
 
-3.1
+// 3.1
 
 function square(c) {
     c = c ** 2
@@ -49,7 +49,7 @@ let c = (prompt("Введите число"))
 
 square(c)
 
-3.2
+// 3.2
 
 function square(a) {
     a = a ** 2
