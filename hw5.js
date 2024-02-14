@@ -45,7 +45,8 @@ function square(c) {
     c = c ** 2
     console.log(c)
 }
-let c = Number(prompt("Введите число", 32))
+let c = (prompt("Введите число"))
+
 square(c)
 
 3.2
@@ -54,8 +55,9 @@ function square(a) {
     a = a ** 2
     return a
 }
-let a = Number(prompt("Введите число", 32))
+let a = (prompt("Введите число"))
 console.log(square(a))
+
 
 // Task 4
 
@@ -69,22 +71,25 @@ function userAge(age) {
     }  
 }
 
-let age = Number(prompt("Сколько вам лет?"))
+let age = (prompt("Сколько вам лет?"))
 
 userAge(age)
 
 // Task 5
 
-function result(r, b) {
+function product(r, b) {
     if (isNaN(r) || isNaN(b)) {
         console.log("Одно или оба значения не являются числом")
-    } else if (result = r * b) {
+    } else {
+        const result = r * b
         console.log(result)
     }
 }
 
-let r = Number(prompt("Введите первое число"))
-let b = Number(prompt("Введите второе число"))
+let r = (prompt("Введите первое число"))
+let b = (prompt("Введите второе число"))
+
+product(r, b)
 
 // Task 6
 
