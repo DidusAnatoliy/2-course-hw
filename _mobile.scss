@@ -1,0 +1,47 @@
+@media (max-width: 767px) {
+    .center {
+        padding-inline: max(50% - 171px, 16px);
+        animation: none;
+    }
+
+    .header {
+        height: 735px;
+        text-align: center;
+        background-position: 31%;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .text {
+        font-size: 14px;
+        line-height: 157%;
+    }
+
+    .product {
+        border-radius: 16px;
+    }
+    
+    .section__title {
+        padding-top: 127px;
+        font-size: 32px;
+    }
+
+    .section__text {
+        font-size: 15px;
+        line-height: 157%;
+    }
+
+    .section__img {
+        padding-left: 16px;
+        margin-top: 64px;
+        margin-bottom: 85px
+    }
+
+    .section__img_size {
+        max-width: 344px;
+        height: 236px;
+        width: 100%;
+    }
+}
