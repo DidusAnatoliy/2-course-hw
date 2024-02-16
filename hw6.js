@@ -44,39 +44,14 @@ console.log(k);
 
 // Task 7
 
+let j = [9,  8,  7,  6,  5];
+let userGuess = prompt("Угадайте число из списка:");
 
-// let y = (prompt("Угадайте число"))
-// let x = [9, 8, 7, 6, 5]
-
-// function guessNumber(y) {
-//     if (y = x.forEach(el)) {
-//         alert("Угадал");
-//     } else {
-//         alert("Неугадал");
-//     }
-// }
-// guessNumber(y);
-
-// userAge(age)
-
-// let y = prompt("Угадайте число");
-// let x = [9,  8,  7,  6,  5];
-
-// function guessNumber(y) {
-//     let isGuessed = false;
-//     x.forEach(el => {
-//         if (y === String(el)) {
-//             alert("Угадал");
-//             isGuessed = true;
-//         }
-//     });
-//     if (!isGuessed) {
-//         console.log("Неугадал");
-//     }
-// }
-
-// guessNumber(y);
-
+if (j.includes(Number(userGuess))) {
+    alert("Угадал");
+} else {
+    alert("Не угадал");
+}
 
 // Task 8
 
@@ -86,9 +61,39 @@ console.log(c);
 
 // Task 9
 
-// let io = [[1, 2, 3,],[4, 5, 6]];
-// io = io.split('[]');
-// console.log(io);
+let array = [[1,  2,  3], [4,  5,  6]];
+let flattened = array.flat();
+console.log(flattened);
 
 // Task 10
 
+let numbers = [3,  7,  1,  9,  5,  4,  2,  8,  6,  10];
+
+for (let i =  0; i < numbers.length -  1; i++) {
+  console.log(numbers[i] + numbers[i +  1]);
+}
+
+// Task 11
+
+function squares(array) {
+    const squaredArray = array.map(num => num * num);
+    return squaredArray;
+}
+
+// Task 12
+
+function getLengthWords(words) {
+  return words.map(word => word.length);
+}
+
+const lengths = getLengthWords(['слово', '', 'слог', 'длинное предложение', 'буква']);
+console.log(lengths);
+
+// Task 13
+
+function filterPositive(array) {
+  return array.filter(value => value <  0);
+}
+
+console.log(filterPositive([-1,  0,  5, -10,  56]))
+console.log(filterPositive([-25,  25,  0, -1000, -2]));
