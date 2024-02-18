@@ -3,8 +3,8 @@
 const numbs = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < numbs.length; i++) {
-    if (numbs[i] == 10) break;
-    console.log(numbs[i]);
+  if (numbs[i] == 10) break;
+  console.log(numbs[i]);
 }
 
 // Task 2
@@ -23,8 +23,15 @@ console.log(f);
 
 // Task 4
 
-let products = new Array('1,1,1', '1,1,1', '1,1,1');
-console.log(products)
+let newArr = [];
+for (let i = 0; i < 3; i++) {
+  newArr[i] = [];
+  for (let j = 0; j < 3; j++) {
+    newArr[i].push(1);
+
+  }
+}
+console.log(newArr);
 
 // Task 5
 
@@ -44,13 +51,13 @@ console.log(k);
 
 // Task 7
 
-let j = [9,  8,  7,  6,  5];
+let j = [9, 8, 7, 6, 5];
 let userGuess = prompt("Угадайте число из списка:");
 
 if (j.includes(Number(userGuess))) {
-    alert("Угадал");
+  alert("Угадал");
 } else {
-    alert("Не угадал");
+  alert("Не угадал");
 }
 
 // Task 8
@@ -61,23 +68,23 @@ console.log(c);
 
 // Task 9
 
-let array = [[1,  2,  3], [4,  5,  6]];
+let array = [[1, 2, 3], [4, 5, 6]];
 let flattened = array.flat();
 console.log(flattened);
 
 // Task 10
 
-let numbers = [3,  7,  1,  9,  5,  4,  2,  8,  6,  10];
+let numbers = [3, 7, 1, 9, 5, 4, 2, 8, 6, 10];
 
-for (let i =  0; i < numbers.length -  1; i++) {
-  console.log(numbers[i] + numbers[i +  1]);
+for (let i = 0; i < numbers.length - 1; i++) {
+  console.log(numbers[i] + numbers[i + 1]);
 }
 
 // Task 11
 
 function squares(array) {
-    const squaredArray = array.map(num => num * num);
-    return squaredArray;
+  const squaredArray = array.map(num => num * num);
+  return squaredArray;
 }
 
 // Task 12
@@ -92,8 +99,8 @@ console.log(lengths);
 // Task 13
 
 function filterPositive(array) {
-  return array.filter(value => value <  0);
+  return array.filter(value => value < 0);
 }
 
-console.log(filterPositive([-1,  0,  5, -10,  56]))
-console.log(filterPositive([-25,  25,  0, -1000, -2]));
+console.log(filterPositive([-1, 0, 5, -10, 56]))
+console.log(filterPositive([-25, 25, 0, -1000, -2]));
