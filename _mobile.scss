@@ -22,7 +22,15 @@
     .product {
         border-radius: 16px;
     }
-    
+
+    .section{
+        height: 653px;
+        text-align: center;
+    }
+    .section__product {
+        height: 1221px;
+    }
+
     .section__title {
         padding-top: 127px;
         font-size: 32px;
@@ -43,5 +51,10 @@
         max-width: 344px;
         height: 236px;
         width: 100%;
+    }
+
+    .section__game2 {
+        height: 653px;
+        flex-wrap: wrap;
     }
 }

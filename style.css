@@ -99,11 +99,20 @@ select:hover {
   text-decoration: underline;
 }
 
+.section__product {
+  background-color: #000915;
+  display: flex;
+  flex-wrap: wrap;
+}
+.section__product :hover {
+  text-decoration: underline;
+}
+
 .section__game2 {
   height: 800px;
   display: flex;
   align-items: center;
-  gap: 64px 135px;
+  gap: 135px;
   flex-direction: row-reverse;
 }
 .section__game2_box {
@@ -125,9 +134,23 @@ select:hover {
   font-weight: 300;
   font-weight: lighter;
 }
+.section__game2_button {
+  width: 234px;
+  height: 48px;
+  border-radius: 30px;
+  background-color: #9C0332;
+  border: none;
+  font-size: 18px;
+  color: #FFFFFF;
+  display: inline-block;
+  cursor: pointer;
+}
 .section__game2__img_size {
   max-width: 481px;
   max-height: 322px;
+}
+.section__game2 :hover {
+  text-decoration: underline;
 }
 
 .section__game3 {
@@ -153,6 +176,9 @@ select:hover {
   margin-top: 32px;
   font-weight: 300;
   font-weight: lighter;
+}
+.section__game3 :hover {
+  text-decoration: underline;
 }
 
 .section__title {
@@ -274,6 +300,13 @@ select:hover {
   .product {
     border-radius: 16px;
   }
+  .section {
+    height: 653px;
+    text-align: center;
+  }
+  .section__product {
+    height: 1221px;
+  }
   .section__title {
     padding-top: 127px;
     font-size: 32px;
@@ -291,5 +324,9 @@ select:hover {
     max-width: 344px;
     height: 236px;
     width: 100%;
+  }
+  .section__game2 {
+    height: 653px;
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=style.css.map */

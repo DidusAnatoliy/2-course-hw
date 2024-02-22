@@ -110,12 +110,20 @@ select {
         text-decoration: underline;
     }
 }
+.section__product{
+    background-color: #000915;
+    display: flex;
+    flex-wrap: wrap;
 
+    :hover {
+        text-decoration: underline;
+    }
+}
 .section__game2 {
     height: 800px;
     display: flex;
     align-items: center;
-    gap: 64px 135px;
+    gap: 135px;
     flex-direction: row-reverse;
 
     &_box {
@@ -140,9 +148,24 @@ select {
         font-weight: lighter;
     }
 
+    &_button {
+        width: 234px;
+        height: 48px;
+        border-radius: 30px;
+        background-color: #9C0332;
+        border: none;
+        font-size: 18px;
+        color: #FFFFFF;
+        display: inline-block;
+        cursor: pointer;
+    }
+
     &__img_size {
         max-width: 481px;
         max-height: 322px;
+    }
+    :hover {
+        text-decoration: underline;
     }
 }
 
@@ -170,6 +193,9 @@ select {
         margin-top: 32px;
         font-weight: 300;
         font-weight: lighter;
+    }
+    :hover {
+        text-decoration: underline;
     }
 }
 
