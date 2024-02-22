@@ -114,7 +114,8 @@ select {
     background-color: #000915;
     display: flex;
     flex-wrap: wrap;
-
+    min-height: 556px;
+    margin-bottom: 128px;
     :hover {
         text-decoration: underline;
     }

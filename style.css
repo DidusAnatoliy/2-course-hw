@@ -103,6 +103,8 @@ select:hover {
   background-color: #000915;
   display: flex;
   flex-wrap: wrap;
+  min-height: 556px;
+  margin-bottom: 128px;
 }
 .section__product :hover {
   text-decoration: underline;
@@ -306,9 +308,35 @@ select:hover {
   }
   .section__product {
     height: 1221px;
+    padding-bottom: 127px;
+  }
+  .section__game2 {
+    padding-top: 51px;
+  }
+  .section__game2_box {
+    align-items: center;
+  }
+  .section__game2_title {
+    font-size: 32px;
+  }
+  .section__game2_text {
+    font-size: 14px;
+    text-align: center;
+  }
+  .section__game2__img_size {
+    max-width: 344px;
+    max-height: 231px;
+  }
+  .section__game3_title {
+    font-size: 32px;
+    padding-top: 51px;
+  }
+  .section__game3_text {
+    font-size: 14px;
+    font-weight: 300;
   }
   .section__title {
-    padding-top: 127px;
+    padding-top: 51px;
     font-size: 32px;
   }
   .section__text {

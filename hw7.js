@@ -117,16 +117,20 @@ console.log(currentDate);
 // Task 10
 
 function formatDate(date) {
-    const options = {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit'
-    };
-    return date.toLocaleDateString('ru-RU', options);
+    const months = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
+    const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+
+    const day = date.getDate();
+    const month = months[date.getMonth()];
+    const year = date.getFullYear();
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
+    const weekday = days[date.getDay()];
+
+    const formattedDate = `Дата: ${day} ${month} ${year} - это ${weekday}. Время: ${hours}:${minutes}:${seconds}`;
+
+    return formattedDate;
 }
 
 const date = new Date();
