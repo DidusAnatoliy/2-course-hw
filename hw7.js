@@ -21,21 +21,21 @@ game1.addEventListener("click", () => {
 
 const gamefruit = document.getElementById("fruit")
 gamefruit.addEventListener("click", () => {
-const fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-fruits.sort(() => Math.random() -  0.5);
-alert(fruits.join(', '));
-let firstGuess = prompt("Чему равнялся первый элемент массива?");
-let lastGuess = prompt("Чему равнялся последний элемент массива?");
-let correctFirst = fruits[0] === firstGuess;
-let correctLast = fruits[fruits.length -  1] === lastGuess;
+    const fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    fruits.sort(() => Math.random() - 0.5);
+    alert(fruits.join(', '));
+    let firstGuess = prompt("Чему равнялся первый элемент массива?");
+    let lastGuess = prompt("Чему равнялся последний элемент массива?");
+    let correctFirst = fruits[0] === firstGuess;
+    let correctLast = fruits[fruits.length - 1] === lastGuess;
 
-if (correctFirst && correctLast) {
-    alert("Поздравляем! Вы угадали оба элемента.");
-} else if (correctFirst || correctLast) {
-    alert("Вы были близки к победе!");
-} else {
-    alert("Вы ответили неверно.");
-}
+    if (correctFirst && correctLast) {
+        alert("Поздравляем! Вы угадали оба элемента.");
+    } else if (correctFirst || correctLast) {
+        alert("Вы были близки к победе!");
+    } else {
+        alert("Вы ответили неверно.");
+    }
 })
 
 // Task 1
@@ -45,14 +45,11 @@ console.log(str.toUpperCase())
 
 // Task 2
 
-const products = ['Кола', 'Квас Никола', 'Добрый Кола', 'Фанта', 'Спрайт'];
-const search = 'кол';
+function searchStart(arr, prefix) {
+    return arr.filter(word => word.toLowerCase().startsWith(prefix.toLowerCase()));
+}
 
-products.forEach((product) => {
-    if (product.toLowerCase().includes(search.toLowerCase())) {
-        console.log(product);
-    }
-})
+console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'));
 
 // Task 3
 
@@ -95,23 +92,23 @@ console.log(randomArray);
 
 // Task 7
 
-function a(min, max) {
-    return Math.floor(Math.random() * (max - min +  1) + min);
+function generateRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-const randomNumber = a(45,  100)
+const randomNumber = generateRandomNumber(45, 100)
 console.log(randomNumber)
 
 // Task 8
 
 let myDate = new Date(2024, 2, 22, 19, 32, 20, 10);
-console.log(myDate); 
+console.log(myDate);
 
 // Task 9
 
 const currentDate = new Date();
 const currentDay = currentDate.getDate();
-currentDate.setDate(currentDay +  73);
+currentDate.setDate(currentDay + 73);
 console.log(currentDate);
 
 // Task 10
@@ -128,9 +125,11 @@ function formatDate(date) {
     const seconds = date.getSeconds();
     const weekday = days[date.getDay()];
 
-    const formattedDate = `Дата: ${day} ${month} ${year} - это ${weekday}. Время: ${hours}:${minutes}:${seconds}`;
+    const lowerCaseMonth = month.toLowerCase();
+    const lowerCaseWeekday = weekday.toLowerCase();
+    const lowerCaseFormattedDate = `Дата: ${day} ${lowerCaseMonth} ${year} - это ${lowerCaseWeekday}. Время: ${hours}:${minutes}:${seconds}`;
 
-    return formattedDate;
+    return lowerCaseFormattedDate;
 }
 
 const date = new Date();
