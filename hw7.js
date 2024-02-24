@@ -19,15 +19,15 @@ game1.addEventListener("click", () => {
 
 // Task 11
 
-const gamefruit = document.getElementById("fruit")
+const gamefruit = document.getElementById("fruit");
 gamefruit.addEventListener("click", () => {
     const fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-    fruits.sort(() => Math.random() - 0.5);
+    fruits.sort(() => Math.random() -  0.5);
     alert(fruits.join(', '));
-    let firstGuess = prompt("Чему равнялся первый элемент массива?");
-    let lastGuess = prompt("Чему равнялся последний элемент массива?");
-    let correctFirst = fruits[0] === firstGuess;
-    let correctLast = fruits[fruits.length - 1] === lastGuess;
+    let firstGuess = prompt("Чему равнялся первый элемент массива?").toLowerCase();
+    let lastGuess = prompt("Чему равнялся последний элемент массива?").toLowerCase();
+    let correctFirst = fruits[0].toLowerCase() === firstGuess;
+    let correctLast = fruits[fruits.length -  1].toLowerCase() === lastGuess;
 
     if (correctFirst && correctLast) {
         alert("Поздравляем! Вы угадали оба элемента.");
@@ -36,7 +36,7 @@ gamefruit.addEventListener("click", () => {
     } else {
         alert("Вы ответили неверно.");
     }
-})
+});
 
 // Task 1
 
