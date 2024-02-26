@@ -22,9 +22,48 @@
     .product {
         border-radius: 16px;
     }
+
+    .section{
+        height: 653px;
+        text-align: center;
+    }
+    .section__product {
+        height: 1221px;
+        padding-bottom: 127px
+    }
+    .section__game2 {
+        padding-top: 51px;
+        &_box {
+            align-items: center;
+        }
+        &_title {
+            font-size: 32px;
+        }
+        &_text {
+            font-size: 14px;
+            text-align: center;
+        }
+        &__img_size {
+            max-width: 344px;
+            max-height: 231px;
+        }
+    }
+    .section__game3 {
+       
+        &_title {
+            font-size: 32px;
+            padding-top: 51px;
+ 
+        }
     
+        &_text {
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+
     .section__title {
-        padding-top: 127px;
+        padding-top: 51px;
         font-size: 32px;
     }
 
@@ -43,5 +82,10 @@
         max-width: 344px;
         height: 236px;
         width: 100%;
+    }
+
+    .section__game2 {
+        height: 653px;
+        flex-wrap: wrap;
     }
 }
