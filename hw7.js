@@ -22,12 +22,22 @@ game1.addEventListener("click", () => {
 const gamefruit = document.getElementById("fruit");
 gamefruit.addEventListener("click", () => {
     const fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-    fruits.sort(() => Math.random() -  0.5);
+    fruits.sort(() => Math.random() - 0.5);
     alert(fruits.join(', '));
-    let firstGuess = prompt("Чему равнялся первый элемент массива?").toLowerCase();
-    let lastGuess = prompt("Чему равнялся последний элемент массива?").toLowerCase();
+    let firstGuess = prompt("Чему равнялся первый элемент массива?");
+    if (firstGuess === null) {
+        alert("Вы отменили ввод для первого элемента.");
+        return; 
+    }
+    firstGuess = firstGuess.toLowerCase();
+    let lastGuess = prompt("Чему равнялся последний элемент массива?");
+    if (lastGuess === null) {
+        alert("Вы отменили ввод для последнего элемента.");
+        return; 
+    }
+    lastGuess = lastGuess.toLowerCase();
     let correctFirst = fruits[0].toLowerCase() === firstGuess;
-    let correctLast = fruits[fruits.length -  1].toLowerCase() === lastGuess;
+    let correctLast = fruits[fruits.length - 1].toLowerCase() === lastGuess;
 
     if (correctFirst && correctLast) {
         alert("Поздравляем! Вы угадали оба элемента.");
